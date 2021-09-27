@@ -185,11 +185,7 @@ help_string = f'''
 /{BotCommands.TsHelpCommand}: Get help for Torrent search module
 '''
 
-def bot_help(update, context):
-    button = button_build.ButtonMaker()
-    button.buildbutton("Other Commands", f"https://telegra.ph/{help}")
-    reply_markup = InlineKeyboardMarkup(button.build_menu(1))
-    sendMarkup(help_string, context.bot, update, reply_markup)
+
 
 '''
 botcmds = [
